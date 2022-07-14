@@ -1,6 +1,10 @@
 <head>
   <script>
-    function replaceEnglish
+    function replaceEnglish() {
+      var inp = document.getElementById("inp");
+
+      inp.innerText = inp.innerText.replace(/a|e|i|o|u\w+/gi, "");
+    }
   </script>
 </head>
 
